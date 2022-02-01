@@ -255,3 +255,5 @@ const normalizedWordsArr = articleURL.map(
 
 const normalizedArticleName = normalizedWordsArr.join(" ");
 console.log("normalizedArticleName", normalizedArticleName); //What Can Cedefi Bring To The Crypto Industry
+
+// 3. Задание3
