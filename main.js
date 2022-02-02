@@ -1,5 +1,6 @@
-// 1.Найти все методы которые используются для работы со строками String в JS с одним примером
-//
+// // //  ЗАДАНИЕ 1
+// Найти все методы которые используются для работы со строками String в JS с одним примером
+// // //
 
 // 1) String.prototype.at() принимает целочисленное значение и возвращает новую строку, состоящую из одной единицы кода UTF-16. Отрицательные целые числа отсчитываются от последнего символа строки.
 const sentence = "The quick brown fox jumps over the lazy dog.";
@@ -238,7 +239,10 @@ console.log(worldString.fontcolor("green")); // <font color="green">text</font>
 //String.prototype.sup()
 //String.prototype.toSource()
 
-2;
+// // //
+// ЗАДАНИЕ 2
+// // //
+
 const string = "https://inc4.net/what-can-cedefi-bring-to-the-crypto-industry/";
 let firstSlashIndex = string.indexOf("/");
 let domenEndSlashIndex = string.indexOf("/", firstSlashIndex + 2);
@@ -256,4 +260,52 @@ const normalizedWordsArr = articleURL.map(
 const normalizedArticleName = normalizedWordsArr.join(" ");
 console.log("normalizedArticleName", normalizedArticleName); //What Can Cedefi Bring To The Crypto Industry
 
-// 3. Задание 3
+// // // ЗАДАНИЕ 3
+// Найти все методы которые используются для работы с числами
+// // //
+
+// 1) Number.prototype.toExponential() возвращает строку, представляющую объект Number в экспоненциальной записи
+(46.33).toExponential(); //'4.633e+1'
+
+// 2) Number.prototype.toFixed() форматирует число, используя запись с фиксированной точкой.
+let num = 42.6644821;
+num.toFixed(1); //42.7
+num.toFixed(); //43
+
+//3) Number.prototype.toLocaleString() возвращает строку с языковым представлением этого числа.
+let number = 3500;
+
+number.toLocaleString(); // '3 500'
+number.toLocaleString("de-DE"); // '3.500'
+
+// 4) Number.prototype.toPrecision() возвращает строку, представляющую объект Number с указанной точностью.
+
+(3.6633).toPrecision(1); //'4'
+
+//5) Number.prototype.toString() возвращает строку, представляющую указанный объект Number.
+
+(3.5).toString(); // '3.5'
+
+// 6) Number.prototype.valueOf() возвращает обернутое примитивное значение объекта Number
+let num = 43439.533;
+num.valueOf(); //43439.533
+
+//7) Number.parseInt() парсит из строки целое число.
+
+Number.parseInt("5pgfgf3x"); // 5
+
+//8) Number.parseFloat() парсит из строки дробное число.
+Number.parseFloat("12.433rrrqwe79"); // 12.433
+
+//9) Number.isFinite() определяет, является ли переданное значение конечным числом, т. е. проверяет, является ли тип заданного значения числом, а число не является ни положительной бесконечностью, ни отрицательной бесконечностью, ни NaN.
+
+Number.isFinite(266e64); // true
+
+// 10) Number.isInteger() определяет, является ли переданное значение целым числом.
+Number.isInteger(25.000001); // false
+
+// 11) Number.isNaN() определяет, является ли переданное значение NaN и является ли его тип Number
+Number.isNaN(0 / 0); // true
+Number.isNaN(NaN); // true
+
+// 12) Number.isSafeInteger()определяет, является ли предоставленное значение числом, которое является безопасным целым числом
